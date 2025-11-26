@@ -329,5 +329,195 @@ else:
 
 
 # Practice with different list operations and methods
+ruits = ["apple", "cherry", "banana", "mango","cherry"]
+
+# # Add item
+fruits.append("chickoo")
+
+
+# # Insert item at position
+fruits.insert(1,"grapes")
+
+
+
+# # Remove item by name
+fruits.remove("banana")
+
+
+# # Sorting
+fruits.sort()
+
+
+# # Remove item by index
+removed = fruits.pop(2)
+print("Removed :",removed)
+print(fruits)
+
+# # Sorting
+fruits.sort()
+
+
+# # Reverse list
+fruits.reverse()
+
+
+# # Sorting
+fruits.sort()
+
+
+# #clear everything in the list
+fruits.clear()
+
+
+# # knowing the position of an item
+print(fruits.index("mango"))
+
+# #Count how many times item appears
+print(fruits.count("cherry"))
+
+# total items
+print(len(fruits))
+
+print(fruits)
+
+
+# List Practice Menu Program
+items = []
+
+while True:
+    print("\n===== List Operations Menu =====")
+    print("1. Add item")
+    print("2. Insert item at position")
+    print("3. Remove item")
+    print("4. Pop item by index")
+    print("5. View list")
+    print("6. Sort list")
+    print("7. Reverse list")
+    print("8. Clear list")
+    print("9. Quit")
+
+    choice = input("Enter choice (1-9): ")
+
+    if choice == "1":
+        item = input("Enter item to add: ")
+        items.append(item)
+        print("Added!")
+
+    elif choice == "2":
+        item = input("Enter item to insert: ")
+        index = int(input("Enter position: "))
+        items.insert(index, item)
+        print("Inserted!")
+
+    elif choice == "3":
+        item = input("Enter item to remove: ")
+        if item in items:
+            items.remove(item)
+            print("Removed!")
+        else:
+            print("Item not found!")
+    
+    elif choice == "4":
+        index = int(input("Enter index to pop: "))
+        if 0 <= index < len(items):
+            removed = items.pop(index)
+            print(f"Popped: {removed}")
+        else:
+            print("Invalid index!")
+
+    elif choice == "5":
+        print("Current List:", items)
+
+    elif choice == "6":
+        items.sort()
+        print("Sorted!")
+
+    elif choice == "7":
+        items.reverse()
+        print("Reversed!")
+
+    elif choice == "8":
+        items.clear()
+        print("List cleared!")
+
+    elif choice == "9":
+        print("Goodbye!")
+        break
+
+    else:
+        print("Invalid choice. Try again.")
+
+
+
+
+
+#Sample list operations program
+items = []
+
+while True:
+    print("\nList Operations Menu")
+    print("1. Add item")
+    print("2. Insert item at position")
+    print("3. Remove item")
+    print("4. Pop item by index")
+    print("5. View list")
+    print("6. Sort list")
+    print("7. Reverse list")
+    print("8. Clear list")
+    print("9. Quit")
+
+    choice = input("Enter choice (1-9): ")
+
+    if choice == "1":
+        item = input("Enter item to add: ")
+        items.append(item)
+        print("Added!")
+
+    elif choice == "2":
+        item = input("Enter item to insert: ")
+        index = int(input("Enter position: "))
+        items.insert(index, item)
+        print("Inserted!")
+
+    elif choice == "3":
+        item = input("Enter item to remove: ")
+        if item in items:
+            items.remove(item)
+            print("Removed!")
+        else:
+            print("Item not found!")
+    
+    elif choice == "4":
+        index = int(input("Enter index to pop: "))
+        if 0 <= index < len(items):
+            removed = items.pop(index)
+            print(f"Popped: {removed}")
+        else:
+            print("Invalid index!")
+
+    elif choice == "5":
+        print("Current List:", items)
+
+    elif choice == "6":
+        items.sort()
+        print("Sorted!")
+
+    elif choice == "7":
+        items.reverse()
+        print("Reversed!")
+
+    elif choice == "8":
+        items.clear()
+        print("List cleared!")
+
+    elif choice == "9":
+        print("Goodbye!")
+        break
+
+    else:
+        print("Invalid choice. Try again.")
+
+
+
 
 
